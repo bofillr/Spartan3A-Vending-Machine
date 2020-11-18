@@ -1,0 +1,58 @@
+CONFIG VCCAUX = "3.3" ;
+ 
+# Clock 12 MHz
+NET "clock_in" LOC = P129  | IOSTANDARD = LVTTL | PERIOD = 12MHz;
+
+###################################
+#  	 Seven Segment Display    #
+###################################
+
+NET "Seven_Segment_Enable[2]" LOC = P124  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "Seven_Segment_Enable[1]" LOC = P121  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "Seven_Segment_Enable[0]" LOC = P120  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+
+NET "Seven_Segment_Display[7]" LOC = P117  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "Seven_Segment_Display[6]" LOC = P116  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "Seven_Segment_Display[5]" LOC = P115  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "Seven_Segment_Display[4]" LOC = P113  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "Seven_Segment_Display[3]" LOC = P112  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "Seven_Segment_Display[2]" LOC = P111  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "Seven_Segment_Display[1]" LOC = P110  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "Seven_Segment_Display[0]" LOC = P114  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+
+#####################################
+#           DIP Switches           #
+#####################################
+
+NET "price_selector[0]" LOC = P70 | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "price_selector[1]" LOC = P69 | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "price_selector[2]" LOC = P68 | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "price_selector[3]" LOC = P64 | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "price_selector[4]" LOC = P63 | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "price_selector[5]" LOC = P60 | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "price_selector[6]" LOC = P59 | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "price_selector[7]" LOC = P58 | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+
+#####################################
+#           Push Buttons           #
+#####################################
+
+NET  "reset"  LOC = P80   | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8; #SW1
+NET   "pay"   LOC = P79   | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8; #SW2
+NET  "nickel" LOC = P78   | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8; #SW3
+NET   "dime"  LOC = P77   | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8; #SW4
+NET "quarter" LOC = P76   | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8; #SW5
+NET  "dollar" LOC = P75   | PULLUP  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8; #SW6
+
+#####################################
+#               LED                #
+#####################################
+
+NET "LED[0]" LOC = P46 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "LED[1]" LOC = P47 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "LED[2]" LOC = P48 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "LED[3]" LOC = P49 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "LED[4]" LOC = P50 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "LED[5]" LOC = P51 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "LED[6]" LOC = P54 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "LED[7]" LOC = P55 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
